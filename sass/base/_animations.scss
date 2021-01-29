@@ -1,0 +1,42 @@
+@keyframes top-animation {
+    0% {
+        opacity: 0;
+        transform: translate(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes bottom-animation {
+    0% {
+        opacity: 0;
+        transform: translate(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes btn-up {
+    0% {
+        transform: translateY(3rem);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

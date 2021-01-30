@@ -7,15 +7,12 @@ body {
 }
 
 .heading-primary {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     color: $color-white;
     text-transform: uppercase;
-    text-align: center;
+    margin-bottom: 6rem;
     
     &--title {
+        display: inline-block;
         letter-spacing: 3.5rem;
         font-size: 6rem;
         font-weight: 400;
@@ -23,11 +20,11 @@ body {
     }
 
     &--subtitle {
+        display: inline-block;
         letter-spacing: 1.75rem;
         font-size: 2rem;
         font-weight: 700;
         animation: bottom-animation 1s ease-out;
-        margin-bottom: 6rem;
     }
 }
 

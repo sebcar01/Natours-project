@@ -5,3 +5,9 @@
         clear: both;
     }
 }
+
+@mixin text-icon-gradient {
+    background-image: linear-gradient(to right, $color-primary, $color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+}

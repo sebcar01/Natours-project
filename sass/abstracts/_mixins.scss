@@ -11,3 +11,23 @@
     -webkit-background-clip: text;
     color: transparent;
 }
+
+@mixin footer-link-1 {
+
+        &:link,
+        &:visited { 
+        color: $color-gray-light-1;
+        text-decoration: none;
+        display: inline-block;
+        transition: all .2s;
+        perspective: 10rem;
+
+            &:hover,
+            &:active {
+                background-color: $color-black-light;
+                color: $color-primary;
+                transform: rotate(5deg) scale(1.3);
+                box-shadow: 0 1rem 2rem rgba($color-black, .4);
+            }
+        }
+}

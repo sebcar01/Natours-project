@@ -38,3 +38,48 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+// Media query manager
+
+/*
+0-600px     = Phones
+600-900px   = Portrait tablet (Vertical)
+900-1200px  = Landscape tablet (Horizontal)
+1200-1800px = Desktop [The normal styles apply here]
+1800-Beyond = Big desktop (Optional)
+
+$breakpoint argument choices:
+
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+*/
+
+@mixin respond($breakpoint) {
+
+   @if $breakpoint == phone {        //600px
+       @media (max-width: 37.5em) {
+           @content;
+       }
+   }
+
+   @if $breakpoint == tab-port {    //900px
+       @media (max-width: 56.25em) {
+           @content;
+       }
+   }
+
+   @if $breakpoint == tab-land {    //1200px
+       @media (max-width: 75em) {
+           @content;
+       }
+   }
+
+   @if $breakpoint == big-desktop {  //1800px
+       @media (min-width: 112.5em) {
+           @content;
+       }
+   }
+}

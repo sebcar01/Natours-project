@@ -1,3 +1,18 @@
+/*
+0-600px     = Phones
+600-900px   = Portrait tablet (Vertical)
+900-1200px  = Landscape tablet (Horizontal)
+1200-1800px = Desktop [The normal styles apply here]
+1800-Beyond = Big desktop (Optional)
+
+$breakpoint argument choices:
+
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+*/
 @keyframes top-animation {
   0% {
     opacity: 0;
@@ -34,6 +49,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }

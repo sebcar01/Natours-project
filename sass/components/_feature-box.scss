@@ -7,6 +7,10 @@
     box-shadow: $box-shadow-default;
     transition: transform .3s;
 
+    @include respond(tab-port) {
+        padding: 2rem;
+    }
+
     &:hover {
         transform: scale(1.03) translateY(-1.5rem);
     }
@@ -16,5 +20,9 @@
         display: inline-block;
         font-size: 6rem;
         margin-bottom: .5rem;
+
+        @include respond(tab-port) {
+            margin-bottom: 0;
+        }
     }
 }

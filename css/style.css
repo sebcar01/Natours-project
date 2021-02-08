@@ -593,7 +593,7 @@ body {
     padding: 3rem 5rem; }
     @media (max-width: 56.25em) {
       .popup__right {
-        padding: 3rem 3rem; } }
+        padding: 3rem 2.5rem; } }
   .popup__img {
     display: block;
     width: 100%; }

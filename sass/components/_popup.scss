@@ -11,6 +11,8 @@
     visibility: hidden;
     transition: all .3s;
     text-align: justify;
+    backdrop-filter: blur(10px);
+    background-color: rgba($color-black, .3);
 
     @include respond(tab-port) {
         text-align: center;
